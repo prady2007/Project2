@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{ padding: 0; margin: 0; box-sizing: border-box; }
+    body{ background-image: url(./images/pattern-background-desktop.svg); background-repeat: repeat-x; width: 100%; 
+      background-color: hsl(225, 100%, 94%); font-size: 16px;}
+    .center{margin: auto; width: 30%; }
+    .head{margin-top: 100px;}
+    .head img{ width: 100%; border-top-left-radius: 25px; border-top-right-radius: 25px;}
+    .text{background-color: #fff;margin:auto;width:30%; margin-top: -5px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; height: 380px;}
+    .heading{padding-top: 35px; width: 55%; padding-bottom: 15px;}
+    .heading h1{font-family: 'Red Hat Display', sans-serif; font-weight: 700; font-size: 2.1vw;}
+    .para { width: 70%; text-align: center; padding-bottom: 25px;  }
+    .para p{font-weight: 700;opacity: 33%; font-size: 1vw;}
+    .tab { display: flex; background-color: hsl(225, 100%, 98%); margin: 0 8%;border-radius: 5px; justify-content: flex-start; }
+    .icon {padding-left: 8%;padding-top: 5px; }
+    .responsive{width: 100%; height: auto;}
+    .tab1{padding-top: 10px; padding-left: 5%; margin-left: 1vw; position: relative; margin-right: 5vw; white-space: nowrap;}
+    .tab1 p{font-size: 1vw;}
+    .plan h3{font-size: 1.3vw;}
+    .tab2{padding-left: 5%; padding-top: 15px; justify-self: flex-end;}
+    .tab2 p{color: hsl(245, 75%, 52%); font-family: 'Red Hat Display', sans-serif; font-weight: 900;font-size: 1vw; }
+    .tab2 a{color: hsl(245, 75%, 52%);}
+    .btn{background-color: hsl(245, 75%, 52%); margin-top: 20px; width: 60%; text-align: center; border-radius: 10px; 
+      padding: 10px 0;box-shadow: 0px 15px hsl(220, 100%, 95%);}
+    .btn a{text-decoration: none;color: #fff;font-family: 'Red Hat Display', sans-serif; font-size: 1vw; }
+    .btn:hover{ background-color: hsl(225, 81%, 79%);}
+    .cancel{padding-top: 22px; padding-bottom: 22px; width: 60%; text-align: center; opacity: 60%; font-weight: 900; font-size: 1vw;}
+    .cancel a{text-decoration: none; color: black;}
+    @media screen and (max-width:375px){
+      body{background-image: url(./images/pattern-background-mobile.svg);}
+      .head{margin-top: 10%;width: 100%;margin-left: 14px;}
+      .center{width: 92%; margin-left: 20px; margin-right: 20px;}
+      .text{width: 92%;margin-left: 20px;}
+      .heading{padding-top: 20px; width: 90%; padding-bottom: 10px;}
+      .heading h1{font-family: 'Red Hat Display', sans-serif; font-weight: 700; font-size:20px; text-align: center; }
+      .para { width: 90%; text-align: center; padding-bottom: 25px;  }
+      .para p{font-weight: 700;opacity: 33%; font-size: 15px;}
+      .tab1 p{font-size: 15px;}
+      .plan h3{font-size: 20px;}
+      .tab2 p{font-size: 15px; }
+      .btn a{font-size: 15px; }
+      .btn{width: 90%;}
+      .cancel{font-size: 20px;}
+      
+    }
+      
+      
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="head center">
+        <img src="./images/illustration-hero.svg" alt="">
+      </div>
+      <div class="text center">
+        <div class="center heading">
+          <h1>Order Summary</h1>
+        </div>
+        <div class="para center">
+          <p><bold>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</bold></p>
+        </div>
+        <div class="tab">
+          <div class="icon">
+            <img src="./images/icon-music.svg" alt="" class="responsive">
+          </div>
+          <div class="tab1">
+            <div class="plan">
+              <h3>Annual Plan</h3>
+            </div>
+              <p>$59.99/year</p>
+          </div>
+          <div class="tab2">
+            <a href=""><p><bold>Change</bold></p></a>
+          </div>
+        </div>
+        <div class="btn center">
+          <a href="">Proceed to Payment </a>
+         
+        </div>
+        <div class="cancel center">
+          <a href=""><p>Cancel Order</p></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+</body>
+</html>
